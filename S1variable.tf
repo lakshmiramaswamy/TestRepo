@@ -38,7 +38,7 @@ variable "name" {
 variable "tags" {
   description = "A map of tags to add to all resources"
   default     = {
-          "CreatedBy" = "Shobha" 
+          "CreatedBy" = "Shobha Vpc" 
           "Project" = "Abbive sample"
   }
 }
@@ -46,7 +46,7 @@ variable "tags" {
 variable "public_subnet_tags" {
   description = "Additional tags for the public subnets"
   default     = {
-        "CreatedBy" = "Sho"
+        "CreatedBy" = "Sho Sub"
         "Project" = "Abbive sample"
   }
 }
@@ -54,22 +54,12 @@ variable "public_subnet_tags" {
 variable "private_subnet_tags" {
   description = "Additional tags for the private subnets"
   default     = {
-        "CreatedBy" = "Sho"
+        "CreatedBy" = "Sho Sub"
         "Project" = "Abbive sample"
   }
 }
 
-variable "access_key" {
-  description = "AWS access key"
-  default = "AKIAJI4INTOM6BXDWR3A"
-}
-
-variable "secret_key" {
-  description = "AWS secret access key"
-  default = "WfUf+j2fPB9VGg1qsWJxSMS0FUxnQrW+tSurofSC"
-}
-
 variable "region"     {
   description = "AWS region to host your network"
-  default = "ap-northeast-2"
+  default = "us-east-2"
 }
