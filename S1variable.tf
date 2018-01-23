@@ -38,24 +38,24 @@ variable "name" {
 variable "tags" {
   description = "A map of tags to add to all resources"
   default     = {
-          "CreatedBy" = "Shobha Vpc" 
-          "Project" = "Abbive sample"
+          "CreatedBy" = "Vpc" 
+          "Project" = "sample"
   }
 }
 
 variable "public_subnet_tags" {
   description = "Additional tags for the public subnets"
   default     = {
-        "CreatedBy" = "Sho Sub"
-        "Project" = "Abbive sample"
+        "CreatedBy" = "Sub"
+        "Project" = "sample"
   }
 }
 
 variable "private_subnet_tags" {
   description = "Additional tags for the private subnets"
   default     = {
-        "CreatedBy" = "Sho Sub"
-        "Project" = "Abbive sample"
+        "CreatedBy" = "Sub"
+        "Project" = "sample"
   }
 }
 
