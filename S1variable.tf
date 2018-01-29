@@ -62,4 +62,6 @@ variable "private_subnet_tags" {
 variable "region"     {
   description = "AWS region to host your network"
   default = "us-east-2"
+
+}
 }
