@@ -81,6 +81,8 @@ resource "aws_route_table_association" "Abbive_public" {
  resource "aws_route_table_association" "Abbive_private" {
   count = "${length(var.private_subnet)}"
   subnet_id      = "${element(aws_subnet.Abbive_private_subnet.*.id, count.index)}"
+
   route_table_id = "${element(aws_route_table.Abbive_privatert.*.id, count.index)}"
+
 }
 
